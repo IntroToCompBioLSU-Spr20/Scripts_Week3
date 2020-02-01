@@ -138,33 +138,23 @@ Practice Exercise 4
 (8) Use rm recentCommands2.txt to delete this new copy.
 ```
 
-You can download a copy of [test.txt here](https://github.com/IntroPhylogenomics/ComputingFundamentals/blob/master/test.txt).
-
-
 ## Introduction to scripts
 
 - What is a script?
   - Fundamentally, a bash script is just a file containing a series of bash commands.
   - Scripts are formatted as text files. But the things in this file are special.
-  - The first line of a script file tells the computer in which language (i.e., shell) we're writing our script. This line starts with "#!" - also known as a shebang. The shebang tells Terminal that we're about to indicate which language we're going to use.
+  - The first line of a script file tells the computer in which language (i.e., shell) we're writing our script. This line starts with `#!` - also known as a shebang. The shebang tells Terminal that we're about to indicate which language we're going to use.
   - Follow the shebang with the path to the shell that you'd like to use. Yes, the shell itself is a program!
-    - #! /bin/bash
-  - Let's start by creating your first script - myScript.sh
-    - nano myScript.sh
+    - `#! /bin/bash`
+  - Let's start by creating your first script - `myScript.sh`
+    - `nano myScript.sh`
     - Add the shebang line
     - Add two commands in the body of the file
-      - echo "Hello, "$USER"!"
-      - echo "I'M A SCRIPT AND I WORK!"
-
-
-- Scripts contain series of commands
-  - This is essentially your first foray into programming.
-  - You'll need to think through the steps involved in whatever task you need to complete and then write a command for each step.
-  - This ability to break a big problem into individual steps is the most important skill in programming.
-  - As an example, let's write a program together to do a basic analysis of a dna sequence. This sequence is already available in the week 5 repository in `dnaSequence.txt`. This is a real sequence from the human genome (at least, some human genomes) and we'd like to count the number of As, Cs, Gs, and Ts that it contains.
+      - `echo "Hello, "$USER"!"`
+      - `echo "I'M A SCRIPT AND I WORK!"`
 
 - Command-line Arguments
-    - To access the argument from inside the script, bash reserves the special variables $1, $2, $3, ...
+    - To access the argument from inside the script, bash reserves the special variables `$1`, `$2`, `$3`, ...
     - For practice, go back to `myScript.sh` that we created earlier and change `$USER` to `$1`. Now, run it by typing `myScript.sh <YOUR_NAME>`
 
 ```
