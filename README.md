@@ -157,8 +157,3 @@ Practice Exercise 4
     - To access the argument from inside the script, bash reserves the special variables `$1`, `$2`, `$3`, ...
     - For practice, go back to `myScript.sh` that we created earlier and change `$USER` to `$1`. Now, run it by typing `myScript.sh <YOUR_NAME>`
 
-```
-Assignment 3
-
-Will be posted on Jan. 30th
-```
